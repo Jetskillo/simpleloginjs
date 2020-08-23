@@ -1,0 +1,52 @@
+*{margin: 0; padding: 0;}
+body{
+    background:#1c1c1c;
+}
+.row > .col{
+    background: #FFF;
+}
+.auto30{
+    margin: 30px auto;
+}
+
+/*Style Inputs and Title*/
+h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #004173;
+    text-align: center;
+}
+
+input{
+    border: none!important;
+}
+
+.inputBottom{
+    border-bottom: 1px solid;
+}
+
+.btn-secondary{
+    margin-top: 30px;
+    background-color: #004173;
+    border-color: #004173
+}
+
+/*Vertical Div*/
+.container-middle{
+    margin: 0 80px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 70%;
+}
+
+/*Img Col Style*/
+.imgCol > a, .imgCol > a:hover, .imgCol > a:visited{
+    text-align: right;
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+}
