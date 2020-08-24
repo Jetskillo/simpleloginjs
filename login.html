@@ -13,15 +13,17 @@
             <div class="col">
                 <div class="container-middle">
                     <h1>Login System Container</h1>
-                    <div class="input-group mb-3 inputBottom">
-                        <input type="text" class="form-control" placeholder="Add your login/username" id="inputLogin">
-                    </div>
-                    <div class="input-group mb-3 inputBottom">
-                        <input type="password" class="form-control" placeholder="Add your password" id="inputPass">
-                    </div>
-                    <div class="input-group mb-3">
-                        <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="tryEnter()">Let's Rock!</button>
-                    </div>
+                    <form id="formFull">
+                      <div class="input-group mb-3 inputBottom">
+                          <input type="text" class="form-control" placeholder="Add your login/username" id="inputLogin">
+                      </div>
+                      <div class="input-group mb-3 inputBottom">
+                          <input type="password" class="form-control" placeholder="Add your password" id="inputPass">
+                      </div>
+                      <div class="input-group mb-3">
+                          <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="tryEnter()">Let's Rock!</button>
+                      </div>
+                    </form>
                 </div>
             </div>
             <div class="col imgCol">
@@ -31,14 +33,14 @@
         </div>
     </div>
   <!-- Modal - Not Implemented -->
-  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal" id="staticBackdrop">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
           Login or Password not match.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Try again</button>
+          <button type="button" class="btn btn-secondary" onclick="noAccessHide()">Try again</button>
         </div>
       </div>
     </div>
